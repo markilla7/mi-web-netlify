@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Netlify + Supabase HOY 27</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Cargamos la librer�a oficial de Supabase desde un CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Productos</h1>
+        
+        <!-- Formulario para agregar -->
+        <form id="product-form">
+            <input type="text" id="nombre" placeholder="Nombre del producto" required>
+            <input type="number" id="precio" placeholder="Precio" required>
+            <button type="submit">Guardar Producto</button>
+        </form>
+
+        <!-- Contenedor donde mostraremos los datos -->
+        <ul id="product-list"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
