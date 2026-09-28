@@ -29,7 +29,7 @@ async function cargarProductos() {
     lista.innerHTML = '';
     data.forEach(prod => {
         const li = document.createElement('li');
-        li.innerHTML = `<span><strong>${prod.nombre}</strong></span> <span>$${prod.precio}</span>`;
+        li.innerHTML = `<span><strong>${prod.nombre}</strong></span> <span>Bs.${prod.precio}</span>`;
         lista.appendChild(li);
     });
 }
